@@ -1,12 +1,13 @@
 (function() {
   "use strict";
-    console.log("run mobile toolbar for kiwi");
+    //console.log("run mobile toolbar for kiwi");
 
     //init
     //1vh = 1% screen height
     let toolbarHeight = "5vh";
     let toolbarFontSize = "3vh";
     let showToolbarFontSize = "2vh";
+    let buttonWidth = "16%";
 
     //adjust toolbar heigh and font size based on screen size
     if (window.screen.height < window.screen.width) {
@@ -67,9 +68,10 @@
     backwardButton.style.color = "white";
     backwardButton.style.backgroundColor = "transparent";
     backwardButton.style.border = "0px solid black";
-    backwardButton.style.width = "20%";
+    backwardButton.style.width = buttonWidth;
     backwardButton.style.height = toolbarHeight;
     backwardButton.style.lineHeight = toolbarHeight;
+    backwardButton.style.padding = "0px";
     backwardButton.style.border = "none";
     backwardButton.style.outline = "none";
     backwardButton.style.fontSize = toolbarFontSize;
@@ -87,9 +89,10 @@
     forwardButton.style.color = "white";
     forwardButton.style.backgroundColor = "transparent";
     forwardButton.style.border = "0px solid black";
-    forwardButton.style.width = "20%";
+    forwardButton.style.width = buttonWidth;
     forwardButton.style.height = toolbarHeight;
     forwardButton.style.lineHeight = toolbarHeight;
+    forwardButton.style.padding = "0px";
     forwardButton.style.border = "none";
     forwardButton.style.outline = "none";
     forwardButton.style.fontSize = toolbarFontSize;
@@ -108,9 +111,10 @@
     closeTabButton.style.color = "white";
     closeTabButton.style.backgroundColor = "transparent";
     closeTabButton.style.border = "0px solid black";
-    closeTabButton.style.width = "20%";
+    closeTabButton.style.width = buttonWidth;
     closeTabButton.style.height = toolbarHeight;
     closeTabButton.style.lineHeight = toolbarHeight;
+    closeTabButton.style.padding = "0px";
     closeTabButton.style.border = "none";
     closeTabButton.style.outline = "none";
     closeTabButton.style.fontSize = toolbarFontSize;
@@ -124,44 +128,70 @@
         chrome.runtime.sendMessage({ask: "close"});
     };    
 
-    let reloadTabButton = document.createElement("button");
-    reloadTabButton.style.color = "white";
-    reloadTabButton.style.backgroundColor = "transparent";
-    reloadTabButton.style.border = "0px solid black";
-    reloadTabButton.style.width = "20%";
-    reloadTabButton.style.height = toolbarHeight;
-    reloadTabButton.style.lineHeight = toolbarHeight;
-    reloadTabButton.style.border = "none";
-    reloadTabButton.style.outline = "none";
-    reloadTabButton.style.fontSize = toolbarFontSize;
-    reloadTabButton.style.fontWeight = "bold";
-    reloadTabButton.style.cursor = "pointer";
-    reloadTabButton.style.overflow = "hidden";
-    reloadTabButton.innerHTML = "R";
+    let reloadButton = document.createElement("button");
+    reloadButton.style.color = "white";
+    reloadButton.style.backgroundColor = "transparent";
+    reloadButton.style.border = "0px solid black";
+    reloadButton.style.width = buttonWidth;
+    reloadButton.style.height = toolbarHeight;
+    reloadButton.style.lineHeight = toolbarHeight;
+    reloadButton.style.padding = "0px";
+    reloadButton.style.border = "none";
+    reloadButton.style.outline = "none";
+    reloadButton.style.fontSize = toolbarFontSize;
+    reloadButton.style.fontWeight = "bold";
+    reloadButton.style.cursor = "pointer";
+    reloadButton.style.overflow = "hidden";
+    reloadButton.innerHTML = "R";
 
     //add click event
-    reloadTabButton.onclick=function(){
+    reloadButton.onclick=function(){
         chrome.runtime.sendMessage({ask: "reload"});
     };
 
 
-    let newTabButton = document.createElement("button");
-    newTabButton.style.color = "white";
-    newTabButton.style.backgroundColor = "transparent";
-    newTabButton.style.border = "0px solid black";
-    newTabButton.style.width = "20%";
-    newTabButton.style.height = toolbarHeight;
-    newTabButton.style.lineHeight = toolbarHeight;
-    newTabButton.style.border = "none";
-    newTabButton.style.outline = "none";
-    newTabButton.style.fontSize = toolbarFontSize;
-    newTabButton.style.fontWeight = "bold";
-    newTabButton.style.cursor = "pointer";
-    newTabButton.style.overflow = "hidden";
-    newTabButton.innerHTML = "+";
+
+
+    let undoButton = document.createElement("button");
+    undoButton.style.color = "white";
+    undoButton.style.backgroundColor = "transparent";
+    undoButton.style.border = "0px solid black";
+    undoButton.style.width = buttonWidth;
+    undoButton.style.height = toolbarHeight;
+    undoButton.style.lineHeight = toolbarHeight;
+    undoButton.style.padding = "0px";
+    undoButton.style.border = "none";
+    undoButton.style.outline = "none";
+    undoButton.style.fontSize = toolbarFontSize;
+    undoButton.style.fontWeight = "bold";
+    undoButton.style.cursor = "pointer";
+    undoButton.style.overflow = "hidden";
+    undoButton.innerHTML = "u";
 
     //add click event
-    newTabButton.onclick=function(){
+    undoButton.onclick=function(){
+        chrome.runtime.sendMessage({ask: "undo"});
+    };
+
+
+    let createTabButton = document.createElement("button");
+    createTabButton.style.color = "white";
+    createTabButton.style.backgroundColor = "transparent";
+    createTabButton.style.border = "0px solid black";
+    createTabButton.style.width = buttonWidth;
+    createTabButton.style.height = toolbarHeight;
+    createTabButton.style.lineHeight = toolbarHeight;
+    createTabButton.style.padding = "0px";
+    createTabButton.style.border = "none";
+    createTabButton.style.outline = "none";
+    createTabButton.style.fontSize = toolbarFontSize;
+    createTabButton.style.fontWeight = "bold";
+    createTabButton.style.cursor = "pointer";
+    createTabButton.style.overflow = "hidden";
+    createTabButton.innerHTML = "+";
+
+    //add click event
+    createTabButton.onclick=function(){
         chrome.runtime.sendMessage({ask: "create"});
     };
 
@@ -170,9 +200,10 @@
     hideToolbarButton.style.color = "white";
     hideToolbarButton.style.backgroundColor = "transparent";
     hideToolbarButton.style.border = "0px solid black";
-    hideToolbarButton.style.width = "20%";
+    hideToolbarButton.style.width = buttonWidth;
     hideToolbarButton.style.height = toolbarHeight;
     hideToolbarButton.style.lineHeight = toolbarHeight;
+    hideToolbarButton.style.padding = "0px";
     hideToolbarButton.style.border = "none";
     hideToolbarButton.style.outline = "none";
     hideToolbarButton.style.fontSize = toolbarFontSize;
@@ -196,8 +227,9 @@
     toolbar.appendChild(forwardButton);
     toolbar.appendChild(closeTabButton);
     //reload api doesn't work on Kiwi Browser
-    //toolbar.appendChild(reloadTabButton);
-    toolbar.appendChild(newTabButton);
+    //toolbar.appendChild(reloadButton);
+    toolbar.appendChild(undoButton);
+    toolbar.appendChild(createTabButton);
     toolbar.appendChild(hideToolbarButton);
 
     //add toolbar to body
