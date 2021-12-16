@@ -18,7 +18,7 @@ So you can handle tabs much more easily on mobile.
 ## Chinese 中文说明  
 这是用于kiwi Browser的手机端chrome 扩展。  
 扩展会在浏览器底部显示一个工具栏，包括如下按钮：  
-前进，后退，关闭标签，打开新标签，隐藏本工具栏  
+前进，后退，关闭标签，撤销，打开新标签，隐藏本工具栏   
 
 这样，手机浏览器可以非常方便的操作标签页。  
 
