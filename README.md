@@ -1,5 +1,6 @@
 
-# Mobile Toolbar Chrome Extension For Kiwi Browser  
+# Mobile Toolbar Chrome Extension For Kiwi Browser 
+![alt text](https://raw.githubusercontent.com/butaixianran/Mobile-Toolbar-For-Kiwi-Browser/main/pic/screen.jpg)  
 
 ## English
 This chrome extension will display a toolbar at the bottom of your browser, which including following buttons:  
