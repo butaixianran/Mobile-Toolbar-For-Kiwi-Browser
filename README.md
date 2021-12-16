@@ -7,6 +7,7 @@ This chrome extension will display a toolbar at the bottom of your browser, whic
 * go back  
 * go forward  
 * close tab  
+* undo tab  
 * open new tab  
 * hide this toolbar to corner  
 
@@ -26,4 +27,7 @@ So you can handle tabs much more easily on mobile.
 # Chrome Store  
 https://chrome.google.com/webstore/detail/mobile-toolbar-for-kiwi-b/eeaojogamfniomoajplacaddobefohfc  
 
-
+# Change log  
+### v0.1.1  
+* add undo button  
+* set padding=0 for all buttons  
