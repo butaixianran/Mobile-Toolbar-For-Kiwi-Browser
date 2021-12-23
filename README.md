@@ -15,7 +15,7 @@ It can be used with Kiwi Browser, which is a mobile browser can install chrome e
 
 So you can handle tabs much more easily on mobile.  
 
-Also, it will auto adjust toolbar size base on your page size, so it works well on Desktop mode or on a tablet.
+Also, it will adjust toolbar size base on your page size, so it works well on Desktop mode or on a tablet.
 
 # Chrome Store  
 https://chrome.google.com/webstore/detail/mobile-toolbar-for-kiwi-b/eeaojogamfniomoajplacaddobefohfc  
