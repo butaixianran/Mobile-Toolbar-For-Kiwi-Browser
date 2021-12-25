@@ -30,6 +30,11 @@ https://chrome.google.com/webstore/detail/mobile-toolbar-for-kiwi-b/eeaojogamfni
 工具栏的尺寸会根据屏幕长宽自动调整，所以平板，手机横屏，手机桌面网站模式，也都能很方便的使用。  
 
 # Change log  
+### v0.2.1  
+* change button text to icon
+* add reload button
+* use `for of` loop to create buttons
+
 ### v0.1.1  
 * add undo button  
 * set padding=0 for all buttons  
