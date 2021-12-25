@@ -27,7 +27,7 @@ chrome.runtime.onMessage.addListener(
     } else if (request.ask === "reload") {
         chrome.tabs.reload(sender.tab.id);
     } else if (request.ask === "create") {
-        chrome.tabs.create({});
+        chrome.tabs.create({url:"chrome://newtab"});
     } else if (request.ask === "undo") {
         //get undo's url
         chrome.storage.local.get(['undoUrl'], function(result) {
