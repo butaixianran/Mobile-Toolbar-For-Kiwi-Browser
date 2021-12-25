@@ -7,6 +7,7 @@ This chrome extension will display a toolbar at the bottom of your browser, whic
 * go back  
 * go forward  
 * close tab  
+* reload tab
 * undo tab  
 * open new tab  
 * hide this toolbar to corner  
@@ -23,7 +24,7 @@ https://chrome.google.com/webstore/detail/mobile-toolbar-for-kiwi-b/eeaojogamfni
 ## Chinese 中文说明  
 这是用于kiwi Browser的手机端chrome 扩展。  
 扩展会在浏览器底部显示一个工具栏，包括如下按钮：  
-前进，后退，关闭标签，撤销，打开新标签，隐藏本工具栏   
+前进，后退，关闭标签，刷新，撤销，打开新标签，隐藏本工具栏   
 
 这样，手机浏览器可以非常方便的操作标签页。  
 
