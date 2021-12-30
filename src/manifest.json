@@ -2,7 +2,7 @@
    "manifest_version": 3,
    "name": "Mobile Toolbar For Kiwi Browser",
    "short_name": "Mobile Toolbar",
-   "version": "0.2.1",
+   "version": "0.2.2",
    "description": "Add a toolbar at the bottom of Chrome Mobile",
    "author": "butaixianran",
    "icons": {

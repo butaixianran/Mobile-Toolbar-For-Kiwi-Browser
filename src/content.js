@@ -30,7 +30,6 @@
     toolbar.style["text-align"] = "center";
     toolbar.style.display = "flex"; 
     toolbar.style.justifyContent = "center"; 
-    toolbar.style.alignItems = "center";
 
 
     //create a div to display toolbar
@@ -140,27 +139,21 @@
         button.style.backgroundColor = "transparent";
         button.style.width = buttonWidth;
         button.style.height = toolbarHeight;
-        button.style.lineHeight = toolbarHeight;
         button.style.padding = "0px";
-        // button.style.fontSize = toolbarFontSize;
         button.style.cursor = "pointer";
         button.style.overflow = "hidden";
-
-        //iconHelper
-        iconHelper = document.createElement('span');
-        iconHelper.style.display = "inline-block";
-        iconHelper.style.height = "100%";
-        iconHelper.style.background = "red";
-        iconHelper.style.verticalAlign = "middle";
-        button.appendChild(iconHelper);
+        button.style.display = "flex";
+        button.style.textAlign = "center";
+        button.style.alignItems = "center";
+        button.style.justifyContent = "center";
 
         //icon
         buttonIcon = document.createElement('img');
         buttonIcon.style.height = toolbarFontSize;
         buttonIcon.style.width = toolbarFontSize;
-        buttonIcon.style.verticalAlign = "middle";
         buttonIcon.src = chrome.runtime.getURL(b.iconSrc);
         button.appendChild(buttonIcon);
+        
 
         //add click event
         button.onclick=b.onClick;
