@@ -3,7 +3,7 @@
 ![alt text](https://raw.githubusercontent.com/butaixianran/Mobile-Toolbar-For-Kiwi-Browser/main/pic/screen.jpg)  
 
 ## English
-This chrome extension will display a toolbar at the bottom of your browser, which including following buttons:  
+This chrome extension will display a toolbar at the bottom of your browser, which includes the following buttons:  
 * go back  
 * go forward  
 * close tab  
@@ -12,7 +12,7 @@ This chrome extension will display a toolbar at the bottom of your browser, whic
 * open new tab  
 * hide this toolbar to corner  
 
-It can be used with Kiwi Browser, which is a mobile browser can install chrome extensions.  
+It can be used with Kiwi Browser, which is a mobile browser that can install chrome extensions.  
 
 So you can handle tabs much more easily on mobile.  
 
