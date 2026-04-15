@@ -32,6 +32,9 @@ Also, it will adjust toolbar size base on your page size, so it works well on De
 工具栏的尺寸会根据屏幕长宽自动调整，所以平板，手机横屏，手机桌面网站模式，也都能很方便的使用。  
 
 # Changelog  
+### v0.3.1
+* API `chrome.sessions.restore` does not work well on mobile, so undo urls with a ur list saved by this extension, max to 30 urls.
+ 
 ### v0.3.0
 * Update undo function to use chrome's extension api which now is supported by some mobile web explorers.
 
